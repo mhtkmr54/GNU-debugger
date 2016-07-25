@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int icount = 1; // default value
+
+main()
+{
+  int i=1;
+
+  while (i=1) {
+    //int b = 5 / i;
+printf("test%d",i
+  }
+
+  printf("Finished\n");
+  return 0;
+}

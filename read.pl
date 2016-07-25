@@ -1,19 +1,27 @@
 
 
 
-open (MYFILE, 'data.txt'); 
+open (MYFILE, 'data.txt');
 while (<MYFILE>)
- { 
+ {
+print "yo in while";
  chomp;
 # print "$_\n";
 $info = "Caine:Michael:Actor:14, Leafy Drive";
 @fields = split(' ', $_);
 #print "@fields\n";
+
+    for (my $i=0; $i <= 20; $i++) {
+       print "i -->  $i \n";
+       print "$fields[$i] \n";
+    }
+
 my $username = $fields[14];
 my $real_name = $fields[13];
 
-if($real_name eq 'java')
+if($real_name eq 'holovars')
 {
+
 	print "$username\n";
 	print "$real_name\n";
 
@@ -26,13 +34,10 @@ if($real_name eq 'java')
 
 }
 
- 
-
-} 
-close (MYFILE); 
 
 
-
+}
+close (MYFILE);
 
 
 sub write_file()

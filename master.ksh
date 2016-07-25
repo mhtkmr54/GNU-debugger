@@ -1,4 +1,4 @@
 
-ps -ld | grep java > data.txt
+ps -ld | grep holovars > data.txt
 
 perl read.pl

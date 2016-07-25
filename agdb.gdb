@@ -1,5 +1,5 @@
 #test gdb
-attach java
+attach holovars
 info args
 
 print icount

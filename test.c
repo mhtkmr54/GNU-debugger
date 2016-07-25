@@ -1,24 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int icount = 1; // default value
 
-main(int argc, char *argv[])
+main()
 {
-  int i;
-
-  if (argc == 2) {
-    icount = atoi(argv[1]);
-  }
-
-  i = icount;
-  while (i > -1) {
+  int icount = 1;
+  while (1) {
     //int b = 5 / i;
-printf("test%d",i);
-    //    printf(" 5 / %d = %d \n", i, b );
-    i = i - 1;
+
+printf("test i --> %d   \n",icount);
+
   }
 
-  printf("Finished\n");
-  return 0;
+  //printf("Finished\n");
 }
